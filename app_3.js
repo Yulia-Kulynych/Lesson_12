@@ -1,0 +1,10 @@
+let table = document.body.firstElementChild;
+console.log(table);
+
+for (let i=0; i<table.rows.length; i++){
+    for(let j=0; j<table.rows[i].cells.length; j++){
+        if (i==j){
+        table.rows[i].cells[j].style.background  = 'red';
+        }
+    }
+}
